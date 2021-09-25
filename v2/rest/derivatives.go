@@ -20,7 +20,9 @@ func (s *WalletService) SetCollateral(symbol string, amount float64) (bool, erro
 		"symbol":     symbol,
 		"collateral": amount,
 	}
-	req, err := s.requestFactory.NewAuthenticatedRequestWithData(common.PermissionRead, urlPath, data)
+	// I debug it
+	// req, err := s.requestFactory.NewAuthenticatedRequestWithData(common.PermissionRead, urlPath, data)
+	req, err := s.requestFactory.NewAuthenticatedRequestWithData(common.PermissionWrite, urlPath, data)
 	if err != nil {
 		return false, err
 	}
