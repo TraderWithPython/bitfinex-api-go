@@ -13,7 +13,7 @@ A Golang reference implementation of the Bitfinex API for both REST and websocke
 ## Installation
 
 ``` bash
-go get github.com/bitfinexcom/bitfinex-api-go
+go get github.com/TraderWithPython/bitfinex-api-go
 ```
 
 Optional - run the 'trade-feed' example to begin receiving realtime trade updates via the websocket
